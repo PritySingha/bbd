@@ -141,35 +141,33 @@ transform:translateY(-50%);
 
 /* ROAST SECTION */
 
-.roast-overlay{
+.roast-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
 
-position:absolute;
-top:40%;
-left:50%;
-
-transform:translate(-50%,-50%);
-
-background:rgba(0,0,0,0.75);
-
-padding:40px;
-
-border-radius:15px;
-
-text-align:center;
-
+  width: 80%;        /* 👈 Wider overlay */
+  max-width: 900px;  /* 👈 Prevents it from stretching too far */
 }
 
-.roast-overlay ul{
-
-list-style:none;
-
+.roast-overlay ul {
+  list-style: none;
+  padding: 0;        /* 👈 Removes default padding */
+  margin: 0;         /* 👈 Keeps things neat */
 }
 
-.roast-overlay li{
-
-margin:10px 0;
-
+.roast-overlay li {
+  margin: 10px 0;
+  font-size: 1.2rem; /* 👈 Slightly larger text for readability */
+  line-height: 1.6;  /* 👈 More breathing room between lines */
 }
+
 
 
 
